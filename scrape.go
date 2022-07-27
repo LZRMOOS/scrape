@@ -3,7 +3,6 @@
 
 package main
 
-// import packages
 import (
 	"bufio"
 	"fmt"
@@ -14,14 +13,12 @@ import (
 	"strings"
 )
 
-// usage function
 func usage() {
 	fmt.Println("usage: go run scrape.go <directory> <keyword> <output_file>")
 	os.Exit(1)
 }
 
 func main() {
-	// get the directory and keyword from the command line, and print usage if not enough arguments
 	if len(os.Args) < 4 {
 		usage()
 		os.Exit(1)
